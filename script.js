@@ -377,19 +377,6 @@ function initAirplaneAnimation() {
         ctx.fillStyle = 'rgba(30, 50, 80, 0.1)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-        // Draw continents (simplified)
-        ctx.fillStyle = 'rgba(50, 80, 50, 0.2)';
-        
-        // Europe
-        ctx.beginPath();
-        ctx.ellipse(canvas.width * 0.5, canvas.height * 0.4, canvas.width * 0.15, canvas.height * 0.2, 0, 0, Math.PI * 2);
-        ctx.fill();
-
-        // Russia
-        ctx.beginPath();
-        ctx.ellipse(canvas.width * 0.7, canvas.height * 0.25, canvas.width * 0.2, canvas.height * 0.15, 0, 0, Math.PI * 2);
-        ctx.fill();
-
         // Draw city markers
         ctx.fillStyle = 'rgba(255, 100, 100, 0.9)';
         russianCities.forEach(city => {
