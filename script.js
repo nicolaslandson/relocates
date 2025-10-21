@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         redirectText.hidden = false;
         setTimeout(() => {
-            window.open('https://t.me/relocates_spain', '_blank');
+            window.open('https://calendly.com/relocates/30min', '_blank');
         }, 2500);
     }
 
