@@ -168,6 +168,12 @@ document.addEventListener('DOMContentLoaded', function() {
             resultText.textContent = 'Есть нюансы, которые стоит уточнить. Мы поможем понять, что можно улучшить для подачи.';
         }
         redirectText.hidden = false;
+        
+        // Отправка цели в Яндекс.Метрику
+        if (typeof ym !== 'undefined') {
+            ym(104426998, 'reachGoal', 'tg_click');
+        }
+        
         setTimeout(() => {
             window.open('https://calendly.com/relocates/30min', '_blank');
         }, 2500);
